@@ -1,13 +1,13 @@
 package com.surajkamble.machine_coding_app.data.repository
 
-import com.surajkamble.machine_coding_app.data.local.ExpenseDao
+import com.surajkamble.machine_coding_app.data.local.dao.ExpenseDao
 import javax.inject.Inject
 
 class ExpenseRepositoryImpl @Inject constructor(
     private val expenseDao: ExpenseDao
 ) : ExpenseRepository {
     override suspend fun addAllExpense(amount: Double, paidBy: String) {
-        expenseDao.getAllExpenses(
+        expenseDao.getExpenseById(
             amount = amount,
             paidBy = paidBy
         )

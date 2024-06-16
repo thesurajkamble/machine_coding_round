@@ -1,9 +1,6 @@
 package com.surajkamble.machine_coding_app.data.di
 
-import com.surajkamble.machine_coding_app.data.local.ExpenseDao
-import com.surajkamble.machine_coding_app.data.repository.ExpenseRepository
 import com.surajkamble.machine_coding_app.data.repository.ExpenseRepositoryImpl
-import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
